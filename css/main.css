@@ -87,7 +87,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+     
 /* ----- BASE HEADER + FOOTER ----- */
+
+header {
+  padding: 15px 0;
+}
 
 header,
 footer {
@@ -102,6 +111,13 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+header .header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -109,16 +125,35 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+}
+
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -128,6 +163,9 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -139,6 +177,10 @@ footer .social-icons p {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  padding: 55px 0;
+}
+
 /* Aside */
 
 aside {
@@ -146,6 +188,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
 
 /* Features */
@@ -154,6 +197,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
 
 .features .features-items {
@@ -163,12 +207,31 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 55%;
+  padding: 60px 0;
+}
+
+.features p {
+  margin: 0;
+}
+
 /* Reviews */
 
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 50px 0;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 /* -------------------- Mobile Styles - About Page-------------------- */
@@ -191,6 +254,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.contact-content p {
+  margin: 0;
+}
+
 /* -------------------- Mobile Styles - FAQ Page-------------------- */
 
 /* FAQ */
@@ -203,10 +270,19 @@ aside {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
