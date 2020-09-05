@@ -507,8 +507,66 @@ aside {
 }
     
     @media screen and (min-width: 1200px) {
-    /*Desktop styles here*/
+      /* BASE */
+      .content-wrapper {
+        max-width: 960px;
+      }
+
+      /* HEADER */
+      header nav {
+        width: 20%;
+      }
+
+      .header-divider {
+        display: none;
+      }
+
+      /* HERO AREA */
+
+      .hero-area h1 {
+        padding: 0;
+        width: 40%;
+      }
+
+      /* ASIDE */
+      aside .content-wrapper {
+        justify-content: space-around;
+      }
     
+      aside .content-wrapper .form-description,
+      aside .content-wrapper .form {
+        width: 30%;
+      }
+
+      /* FEATURES */
+
+      .features h2 {
+        width: 50%;
+      }
+
+      .features article {
+        flex-basis: 33.33%;
+      }
+
+      .features .features-item-description {
+        text-align: center;
+      }
+
+      /* REVIEWS */
+      .reviews article div {
+        width: 42%;
+      }
+
+      /* ==========================================================================
+      About page
+      ========================================================================== */
+
+      /* ==========================================================================
+      FAQ Page
+      ========================================================================== */
+
+     }
+
     }
 
 /* ==========================================================================
