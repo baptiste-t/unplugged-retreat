@@ -99,10 +99,6 @@ body {
   color: #e2e3ed;
 }
 
-header {
-  background-color: #202322;
-}
-
 .header-divider {
   background-color: #3a3a3a;
   height: 1px;
@@ -131,7 +127,8 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
-  font-weight: normal;
+  font-weight: 500;
+  margin: 20px 0;
 
 }
 
@@ -141,16 +138,15 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
   font-style: normal;
-
 }
 
 /* ----- CONTAINER ----- */
@@ -189,6 +185,14 @@ header .header-divider {
   margin: 10px 0 20px 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -205,6 +209,7 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 footer {
@@ -246,13 +251,17 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background-image: url(../img/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
 .hero-area h1 {
-  padding: 55px 0;
+  margin: 0;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 2.25em;
   font-weight: 500;
@@ -301,6 +310,9 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url(../img/features-background.jpg);
+  background-position: center;
+  background-size: cover;
 
 }
 
@@ -333,6 +345,7 @@ input[type=button] {
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -490,15 +503,28 @@ input[type=button] {
       max-width: 640px; /* to where does this apply*/
       margin: 100px 0;
     }
+
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.25;
+    }
     /* Header */
     header {
       justify-content: space-around; /* this is useless? */
-      padding: 33px 0;
     }
 
     header .content-wrapper {
         width: 100%;
         justify-content: space-between;
+    }
+
+    header figure {
+      width: 30%;
     }
 
     header nav {
@@ -514,7 +540,9 @@ input[type=button] {
     }
 
     /* Hero Area */
-
+    .hero-area h1 {
+      max-width: 73%;
+    }
     /* Aside */
     aside .content-wrapper {
         margin: 50px 0;
@@ -549,9 +577,18 @@ input[type=button] {
       display: flex;
       justify-content: space-between;
     }
-    
+    .reviews h2 {
+      width: 85%;
+    }
+  
+    .reviews article figure,
     .reviews article div {
-        width: 50%;
+      width: 49%;
+    }
+  
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
     }
 
     /* Footer */
@@ -619,6 +656,18 @@ input[type=button] {
       .content-wrapper {
         max-width: 960px;
       }
+      h2 {
+        font-size: 2.25em;
+      }
+      h3,
+      h4 {
+        font-size: 1.875em;
+      }
+
+      p {
+        font-size: 1.125em;
+        line-height: 1.333;
+      }
 
       /* HEADER */
       header nav {
@@ -649,7 +698,7 @@ input[type=button] {
       /* FEATURES */
 
       .features h2 {
-        width: 50%;
+        width: 90%;
       }
 
       .features article {
@@ -663,6 +712,14 @@ input[type=button] {
       /* REVIEWS */
       .reviews article div {
         width: 42%;
+      }
+    
+      .reviews h2 {
+        padding-bottom: 50px;
+      }
+    
+      footer h4 {
+        font-size: 1.875em;
       }
 
       /* ==========================================================================
